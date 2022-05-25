@@ -1,0 +1,37 @@
+1) Alguns números de três dígitos tem a seguinte característica: a soma do cubo de cada dígito é igual ao próprio número de três dígitos. Ex: 153. 1³ + 5 ³ + 3³ = 153. Faça um script em Python que escreva todos os números com esta característica entre 100 e 500.
+(2.5 pontos)
+
+2) Faça um script em python que leia um valor N do teclado e faça as seguintes operações:
+- imprima a quantidade de dígitos que o número tem. Ex: 55555 deve retornar 5. 444 deve retornar 3. 11 deve retornar 2.
+- caso a quantidade de dígitos seja par, imprima a soma dos dígitos do número.
+- caso a quantidade de dígitos seja ímpar, imprima o maior dos dígitos em unidade. Ex: 594 deve retornar 9. 4827 deve retornar 8.
+(3.5 pontos)
+
+3) Blackjack for dummies é um jogo que simula o funcionamento do famoso jogo de cartas 21 de maneira simplificada. O objetivo do jogo é alcançar a soma de 21 pontos ou o mais próximo disso, através dos valores das cartas de um baralho comum. Na versão que você deve implementar, você deve simular as seguintes regras:
+
+- O jogo terá a participação de dois jogadores. Primeiramente, leia o nome dos dois jogadores para exibir posteriormente nas mensagens que você poderá exibir na tela.
+
+- As cartas do baralho têm os seguintes valores:
+de 1 a 9 tem os seus valores absolutos
+Valete, Dama e Rei valem 10.
+
+- Os valores que serão exibidos para que o jogador selecione devem ser gerados aleatoriamente entre 1 e 10. A Função randint do pacote random pode ajudar nessa tarefa.
+
+- Um jogador joga por vez. Você deve deixar o jogador da vez jogar até que ele decida parar de somar cartas, ou seja, na jogada devem ser executados os seguintes passos:
+
+Jogada: Ao iniciar sua jogada, um menu com as seguintes opções devem ser exibidas ao jogador: 
+1) pedir uma carta 
+2) parar e finalizar a soma
+
+- Ao selecionar a opção "pedir uma carta" um número aleatório entre 1 e 10 deve ser gerado e exibido para o jogador. O programa deve perguntar ao jogador se deseja adicionar a carta ou parar e finalizar a soma. Se o jogador decidir somar a carta o valor é somado ao total de pontos do jogador na rodada e o menu de Jogada acima é exibido novamente. 
+
+- A jogada termina quando o jogador decide não somar mais uma carta, seja quando a opção 2 do menu de jogada é selecionada, seja quando ele decide não somar o valor da carta gerada na rodada atual.
+
+- O jogo deve efetuar a soma solicitada pelo usuário mesmo que ela ultrapasse os 21 pontos.
+
+- Ambos os jogadores devem jogar, após isso o jogo deve informar o vencedor. O vencedor é aquele que alcançou ou esteve mais próximo de alcançar 21. Se ambos obtiverem a mesma pontuação o jogo deve alertar que houve um empate.
+
+- Se ambos os jogadores ultrapassarem os 21 pontos, o jogo termina sem vencedor e uma mensagem deve ser exibida em alerta. Caso um dos jogadores ultrapasse a soma de 21 o vencedor será o jogador adversário.
+
+- Após exibir o resultado do jogo, o menu inicial deve ser exibido para que novos jogadores possam iniciar um desafio. Dessa forma, uma vez iniciado o menu do jogo o mesmo não deverá ter opção para finalizar, deve rodar indefinidas vezes.
+(4 pontos)

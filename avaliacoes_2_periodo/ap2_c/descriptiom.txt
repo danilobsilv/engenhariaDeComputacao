@@ -1,0 +1,36 @@
+1) Faça um programa em C que leia três strings do teclado e ao final as escreva em linhas diferentes em um arquivo do tipo texto. Ao final, conte e imprima a quantidade de linhas que o arquivo tem.
+
+
+(2.5 pontos)
+
+2)  Faça um programa que leia do teclado um vetor de inteiros de 10 posições preenchidos com valores menores ou iguais a 10. Conte a quantidade de vezes que cada um dos 10 números lidos se repete e então: 
+
+- usando alocação dinâmica, crie um segundo vetor cujo tamanho é a quantidade de elementos diferentes do vetor 1. 
+- preencha o vetor 2 em ordem decrescente (maior para o menor) de acordo com a quantidade de repetições dos elementos do vetor 1 anotadas anteriormente.
+
+Exemplo: 
+
+vet1 = [1,2,3,1,1,5,6,3,8, 2] 
+vet2 = [3,2,2,1,1,1] 
+
+Ao final, imprima ambos os vetores e limpe a memória alocada no programa.
+
+(3.5 pontos)
+
+3) Faça um programa em C que leia dois valores N e M do teclado. Posteriormente, aloque dinamicamente um vetor de inteiros de N posições e leia seus valores via teclado. Em seguida, rotacione M vezes o vetor criado. Rotacionar é movimentar M vezes para frente cada elemento do vetor, ou seja, o primeiro passa a ser o segundo, o segundo o terceiro, e assim sucessivamente. Ao rotacionar o elemento da última posição, este passa a ser o primeiro. Exemplo:
+
+
+N = 5Vetor lido = [3, 8, 9, 7, 6]
+M = 3
+Vetor rotacionado 3 vezes = [9, 7, 6, 3, 8]
+
+Resultado das seguintes rotações:
+
+Rotação 1 = [3, 8, 9, 7, 6] -> [6, 3, 8, 9, 7] 
+Rotação 2 = [6, 3, 8, 9, 7] -> [7, 6, 3, 8, 9] 
+Rotação 3 = [7, 6, 3, 8, 9] -> [9, 7, 6, 3, 8]
+
+
+Ao final imprima ambos os vetores.
+
+(4.0 pontos)
