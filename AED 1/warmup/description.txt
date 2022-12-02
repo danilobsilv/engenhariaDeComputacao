@@ -1,0 +1,15 @@
+Escreva um programa em Python que receba uma expressão aritmética (string) como entrada e verifique os pares e as ordens dos símbolos “{“, “}”, “(“, “)”, “[“, “]” estão na ordem correta.
+
+Exemplo 1:
+
+A expressão {2 + (3 * 4) - (9 -8)} está balanceada.
+
+Exemplo 2:
+
+A expressão [3 + (2 / 4))] não está balanceada.
+
+Formatação dos dados:
+
+Entrada: "{2 + (3 * 4) - (9 -8)}" Saída (esperada): 1
+
+Entrada: [3 + (2 / 4))] Saída (esperada): 0
