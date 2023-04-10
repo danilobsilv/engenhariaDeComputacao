@@ -1,0 +1,35 @@
+O problema de encontrar o caminho mais curto, "Shortest path problem", consiste em encontrar o melhor caminho entre dois pontos chamados nós. Assim, resolver este problema pode significar determinar o caminho entre dois nós com o custo mínimo, ou com o menor tempo de viagem ou com a máxima capacidade.
+
+Dado um Labirinto na forma de uma matriz retangular binária, encontre o comprimento do caminho mais curto no labirinto de uma determinada fonte a um determinado destino. O caminho só pode ser construído a partir de células com valor 1 e, a qualquer momento, só podemos mover um passo em uma das quatro direções.
+
+Os movimentos válidos são:
+
+Para cima: (x, y) ——> (x – 1, y)
+
+Para esquerda: (x, y) ——> (x, y – 1)
+
+Para baixo: (x, y) ——> (x + 1, y)
+
+Para direita: (x, y) ——> (x, y + 1)
+
+Por exemplo, considere a seguinte matriz binária. Se fonte = (0, 0) e destino = (7, 5), o caminho mais curto da origem ao destino tem comprimento 12.
+
+[1, 1, 1, 1, 1, 0, 0, 1, 1, 1,
+ 0, 1, 1, 1, 1, 1, 0, 1, 0, 1,
+ 0, 0, 1, 0, 1, 1, 1, 0, 0, 1,
+ 1, 0, 1, 1, 1, 0, 1, 1, 0, 1,
+ 0, 0, 0, 1, 0, 0, 0, 1, 0, 1,
+ 1, 0, 1, 1, 1, 0, 0, 1, 1, 0,
+ 0, 0, 0, 0, 1, 0, 0, 1, 0, 1,
+ 0, 1, 1, 1, 1, 1, 1, 1, 0, 0,
+ 1, 1, 1, 1, 1, 0, 0, 1, 1, 1,
+ 0, 0, 1, 0, 0, 1, 1, 0, 0, 1]
+ 
+ Por que esse problema é dificil?
+  O problema de encontrar o caminho mais curto em um labirinto se torna difícil devido à complexidade de tempo da solução de backtracking,
+pois, para descobrir e comparar os caminhos, é necessário percorrer todos e você não tem informação suficiente para escolher corretamente.
+ 
+  Ou seja, partindo de um estado inicial, o algoritmo testará N possibilidades de uma Estrutura de Dados para atingir um estado final via
+parâmetro de recursividade (tentativa e erro), assim, mergulhando no processo de enumeração exaustiva(força bruta), ele desqualifica as rotas
+improváveis até que um escopo seja alcançado.
+
