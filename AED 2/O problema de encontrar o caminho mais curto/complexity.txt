@@ -1,0 +1,9 @@
+Ordem de complexidade
+
+Existe uma diferença entre a ordem de complexidade de ambas as soluções apresentadas:
+
+  Em relação ao backtracking, ele por si se torna exponencial de acordo com exaustivas buscas e testes, utilizando a recursividade,
+podendo ter ordem de complexidade exponencial ou O(2^n).
+
+  O algoritmo de Lee resolve o problema por meio de fila, tornando o problema proporcional ao tamanho da matriz enviada para percorrer,
+nesse caso a Ordem de Complexidade de uma fila seria O(p), onde P <= M*N.
