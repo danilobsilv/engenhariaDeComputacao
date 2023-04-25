@@ -1,1 +1,10 @@
+Antes de irmos a solução, precisamos entender o conceito de grafo Hamiltoniano.
 
+Um caminho hamiltoniano é um caminho que passa por cada vértice de um grafo exatamente uma vez. Um ciclo hamiltoniano é um caminho hamiltoniano que retorna ao vértice inicial. Um grafo é dito hamiltoniano se possui um ciclo hamiltoniano.
+
+Fonte: http://www.decom.ufop.br/marco/site_media/uploads/pcc104/antigo_21_aula_21.pdf
+
+Considere uma lista de strings  L , de tamanho  N . Transformando cada item da lista em um vértice, temos a seguinte condição para a lista de adjacência:
+
+Considerando duas strings  u,v∈L , a aresta  u→v , existe apenas se o último caractere de  u , for igual ao primeiro de  v , ou seja,  u[−1]==v[0] .
+Portanto, a partir do grafo  G  formado pela lista de adjacência, se  G  for um grafo Hamiltaniano, ou seja, conter um ciclo Hamiltoniano a partir de qualquer vértice  v∈G , então conseguimos montar um círculo, que análogico ao problema, seria encadear uma lista de palavras em círculo.
