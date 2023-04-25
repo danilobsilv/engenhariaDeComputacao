@@ -1,0 +1,3 @@
+MARCO, Aurélio. Ciclos e Caminhos Hamiltonianos. 2010. Disponível em: http://www.decom.ufop.br/marco/site_media/uploads/pcc104/antigo_21_aula_21.pdf. Acesso em: 03 mar. 2023.
+
+NETWORKX. Tutorial. Disponível em: https://networkx.org/documentation/latest/tutorial.html. Acesso em: 03 mar. 2023.
