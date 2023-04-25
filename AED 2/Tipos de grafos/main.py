@@ -75,15 +75,13 @@ def binaryToDecimal(binary):
 if __name__ == "__main__":
       grafo = {}
       # results_list = []
-      try:
-            n = int(input())
-            for _ in range(n):
-                  entrada = input().split()
-                  grafo[entrada[0]] = entrada[1:]
 
-            x = str(Verification.isRegular(grafo)) + str(Verification.isConnected(grafo)) + str(Verification.isComplete(grafo)) + str(Verification.isSimple(grafo))
+      n = int(input())
+      for _ in range(n):
+            entrada = input().split()
+            grafo[entrada[0]] = entrada[1:]
 
-            binaryToDecimal(x)
+      x = str(Verification.isRegular(grafo)) + str(Verification.isConnected(grafo)) + str(Verification.isComplete(grafo)) + str(Verification.isSimple(grafo))
+
+      binaryToDecimal(x)
       
-      except:
-            raise Exception
