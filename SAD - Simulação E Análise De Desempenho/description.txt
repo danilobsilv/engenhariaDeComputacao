@@ -1,0 +1,3 @@
+- implementar rotina de geração de números pseudo aleatórios conforme acertado em aula para um conjunto de eventos E = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+- realizar teste comparativo de velocidade entre o rand() e o código implementado para as seguintes quantidades de gerações: 100 mil, 1 milhão, 10 milhões, 100 milhões de gerações
+- realizar teste do chi-quadrado do rand() e do código implementado para as mesmas quantidades de vezes geradas no item anterior
