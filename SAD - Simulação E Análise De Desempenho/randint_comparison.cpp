@@ -23,7 +23,6 @@ public:
             int randomNumber = distribution(gen);
             sum += randomNumber;
 
-            // Atualiza o vetor observed para contagem dos dígitos observados
             observed[randomNumber]++;
         }
 
@@ -86,7 +85,9 @@ private:
     int second_comp;
     int third_comp;
     int fourth_comp;
-    std::vector<int> observed = std::vector<int>(10, 0);  // Vetor para contagem dos dígitos observados
+
+    // Vetor para contagem dos dígitos observados
+    std::vector<int> observed = std::vector<int>(10, 0);  
 };
 
 
@@ -229,15 +230,13 @@ int main() {
     std::cout << "\n";
     gento.runTests();
 
-    std::vector<int> observedRand = gen.getObserved();  // Vetor observed do GenerateUsingRand
-    std::vector<int> expected = { // Vetor expected com contagem esperada de cada dígito (0 a 9)
-        10000000, 10000000, 10000000, 10000000, 10000000,
-        10000000, 10000000, 10000000, 10000000, 10000000
+    std::vector<int> observedRand = gen.getObserved();
+    std::vector<int> expected = {10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000
     };
 
     run_chi_squared_test(observedRand, expected);
 
-    std::vector<int> observedLCG = gento.getObserved();  // Vetor observed do GenerateUsingLCG
+    std::vector<int> observedLCG = gento.getObserved();
 
     run_chi_squared_test(observedLCG, expected);
 
