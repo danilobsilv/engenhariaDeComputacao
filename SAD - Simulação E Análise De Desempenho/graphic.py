@@ -1,25 +1,17 @@
 import matplotlib.pyplot as plt
 
-def plot_results(observed_rand, observed_lcg):
-    digits = list(range(10))
-    labels = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-
-    fig, ax = plt.subplots()
-    ax.bar(digits, observed_rand, label='GenerateUsingRand')
-    ax.bar(digits, observed_lcg, label='GenerateUsingLCG')
-
-    ax.set_xlabel('Digits')
-    ax.set_ylabel('Frequency')
-    ax.set_title('Digit Frequency Comparison')
-    ax.set_xticks(digits)
-    ax.set_xticklabels(labels)
-
-    ax.legend()
-
-    plt.show()
-
-# Dados obtidos do teste
+# Resultados obtidos pelo código em C++
 observed_rand = [10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000]
-observed_lcg = [10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000]
+observed_lcg = [9998469, 10004823, 9997611, 10000871, 10000843, 10004635, 10000342, 9999516, 10000813, 10000667]
 
-plot_results(observed_rand, observed_lcg)
+digits = list(range(10))
+
+plt.figure(figsize=(8, 6))
+plt.bar(digits, observed_rand, label='GenerateUsingRand', alpha=0.7)
+plt.bar(digits, observed_lcg, label='GenerateUsingLCG', alpha=0.7)
+plt.xlabel('Dígitos')
+plt.ylabel('Contagem')
+plt.title('Contagem de dígitos observados')
+plt.legend()
+
+plt.show()
